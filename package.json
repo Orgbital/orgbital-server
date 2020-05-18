@@ -1,0 +1,9 @@
+{
+  "name": "orgbital-server",
+  "version": "0.1.0",
+  "description": "A node.js backend for Orgbital",
+  "main": "index.js",
+  "repository": "https://github.com/Orgbital/orgbital-server",
+  "author": "Jing Yen Loh, Tan Yee Jian",
+  "license": "MIT"
+}
