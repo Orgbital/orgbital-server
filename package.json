@@ -7,6 +7,10 @@
   "author": "Jing Yen Loh, Tan Yee Jian",
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.6",
     "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
