@@ -18,6 +18,6 @@
   "scripts": {
     "watch-debug": "nodemon --inspect dist/app.js",
     "watch-ts": "tsc -w",
-    "dev": "concurrently \"npm:watch-*\""
+    "dev": "concurrently -k \"npm:watch-*\""
   }
 }
