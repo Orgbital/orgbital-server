@@ -20,6 +20,7 @@
     "uuid": "^8.1.0"
   },
   "scripts": {
+    "build": "tsc",
     "watch-debug": "nodemon --inspect dist/app.js",
     "watch-ts": "tsc -w",
     "dev": "concurrently -k \"npm:watch-*\""
