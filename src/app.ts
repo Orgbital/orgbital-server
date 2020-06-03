@@ -2,7 +2,11 @@ import express from 'express';
 import ShareDb from 'sharedb';
 import http from 'http';
 import { Server as WebSocketServer } from 'ws';
+import { type as OtTextType } from 'ot-text-unicode';
 import WebSocketJSONStream from '@soundation/websocket-json-stream';
+
+// Register ot-text-unicode document type so ShareDb can recognize it
+ShareDb.types.register(OtTextType);
 
 const backend = new ShareDb();
 
