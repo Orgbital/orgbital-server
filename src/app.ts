@@ -9,6 +9,7 @@ import WebSocketJSONStream from '@soundation/websocket-json-stream';
 ShareDb.types.register(OtTextType);
 
 const backend = new ShareDb();
+const PORT = 8080;
 
 function createDoc (cb: () => void): void {
   const conn = backend.connect();
@@ -30,6 +31,8 @@ function startServer (): void {
   const app = express();
   const server = http.createServer(app);
 
+  app.get('/', (_, res) => res.send('Hello World!'));
+
   const wss = new WebSocketServer({ server });
   wss.on('connection', (ws: WebSocket) => {
     // constructs a websocket stream that knows how to deal with JS objects
@@ -37,7 +40,7 @@ function startServer (): void {
     backend.listen(stream); // let sharedb listen to this json stream
   });
 
-  server.listen(8080, () => console.log('Server started.'));
+  server.listen(PORT, () => console.log(`Server started on port ${PORT}.`));
 };
 
 createDoc(startServer);
