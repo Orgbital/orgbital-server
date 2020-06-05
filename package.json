@@ -16,7 +16,7 @@
     "typescript": "^3.9.2"
   },
   "dependencies": {
-    "@soundation/websocket-json-stream": "^2.1.0",
+    "@soundation/websocket-json-stream": "^2.2.1",
     "express": "^4.17.1",
     "ot-text-unicode": "^3.1.0",
     "sharedb": "^1.3.4",
