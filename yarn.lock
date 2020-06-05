@@ -86,10 +86,10 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@types/sharedb@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@types/sharedb/-/sharedb-1.0.7.tgz#4c975e27f8df942d165cce515516c66eed356f19"
-  integrity sha512-KIkNPxrs1PMJp7NCVGqov2zgBIDwV5+MYg7K5qUndqOIwbypJaPBkFYL48tOGpZYKBNfa4uP8PTATKWUcradHA==
+"@types/sharedb@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@types/sharedb/-/sharedb-1.0.8.tgz#87be992603aa4b7c76dcce7be934557f44437f77"
+  integrity sha512-fc0RbStYuaadwk9NEjiBmaB+UsWOM0rmFt6NPi/nIXHx8tA8WANc3NKqb2+hAusamvgcUZBnki3pO0nQ8l32fg==
   dependencies:
     "@types/ws" "*"
 
