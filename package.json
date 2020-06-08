@@ -37,5 +37,11 @@
     "test": "jest",
     "watch-debug": "nodemon --inspect dist/server.js",
     "watch-ts": "tsc -w"
+  },
+  "scripts-info": {
+    "build": "Build production bundle",
+    "dev": "Start the development server",
+    "start": "Start the production server",
+    "test": "Run unit tests"
   }
 }
