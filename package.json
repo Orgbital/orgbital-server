@@ -32,10 +32,10 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "concurrently -k \"yarn run watch-ts\" \"nodemon --inspect dist/app.js\"",
-    "start": "node dist/app.js",
+    "dev": "concurrently -k \"yarn run watch-ts\" \"nodemon --inspect dist/server.js\"",
+    "start": "node dist/server.js",
     "test": "jest",
-    "watch-debug": "nodemon --inspect dist/app.js",
+    "watch-debug": "nodemon --inspect dist/server.js",
     "watch-ts": "tsc -w"
   }
 }
