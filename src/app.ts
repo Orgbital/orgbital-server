@@ -1,3 +1,4 @@
+import { config as configEnv } from 'dotenv';
 import express from 'express';
 import ShareDb from 'sharedb';
 import http from 'http';
@@ -6,7 +7,7 @@ import WebSocketJSONStream from '@soundation/websocket-json-stream';
 
 
 const backend = new ShareDb();
-const PORT = 8080;
+configEnv();
 
 function createDoc (cb: () => void): void {
   const conn = backend.connect();
