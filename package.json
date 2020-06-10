@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.6",
-    "@types/jest": "^25.2.3",
+    "@types/jest": "^26.0.0",
     "@types/sharedb": "^1.0.8",
     "@types/uuid": "^8.0.0",
     "@types/ws": "^7.2.5",
