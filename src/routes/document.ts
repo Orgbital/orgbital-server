@@ -1,4 +1,4 @@
-import { Router, Request, Response } from 'express';
+import { NextFunction, Router, Request, Response } from 'express';
 import sharedb from '../share';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -8,11 +8,12 @@ export const documentRouter = Router();
  * Returns a uuid to a document.
  * TODO: Retrieve document contents, probably from body
  */
-export const createDocumentHandler = ({ body, params }: Request, res: Response<string>): void => {
+export const createDocumentHandler = ({ body, params }: Request, res: Response<string>, next: NextFunction): void => {
   const { collectionName } = params;
   const id: string = uuidv4();
-    .then(id => res.status(201).send(id));
   createDocument(id, collectionName, body)
+    .then(id => res.status(201).send(id))
+    .catch(err => next(err));
 }
 
 export function createDocument (id: string, collectionName: string, content: Record<string, unknown>): Promise<string> {
