@@ -4248,10 +4248,10 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
 
-sharedb@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/sharedb/-/sharedb-1.3.4.tgz#0f81ccb6eff1f8e71484923cee998db54b866997"
-  integrity sha512-tHiqFmd07cdbWavooUtGN7VGZdiQXrIhKPTSC2X5B8xHHpdss9NOO3kVvp3rYktb6PDiQteyRl40r10rDAHwHw==
+sharedb@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/sharedb/-/sharedb-1.6.0.tgz#0a88bb9e93983d2c0f7f66e0beee8d9fafb4aaac"
+  integrity sha512-N6jhmh408OrZQA7V9Eb1R1vfnJe4zoBjB932L/Z2U4jBZ1F8VTHneMntgVmDfjqkAIWN16TVpxMbcycuLxcDpQ==
   dependencies:
     arraydiff "^0.1.1"
     async "^2.6.3"
